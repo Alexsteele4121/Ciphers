@@ -60,7 +60,8 @@ class Transposition_Solver:
                 separate_words = [word.strip(',')
                                       .strip('.')
                                       .strip('?')
-                                      .strip('!') for word in deciphered_text.split(' ')]
+                                      .strip('!')
+                                      .strip(':') for word in deciphered_text.split(' ')]
                 results = []
                 for word in separate_words:
                     if word:
