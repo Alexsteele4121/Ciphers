@@ -1,5 +1,5 @@
 def transposition_cipher(text: str, key: list) -> str:
-    ciphering_key = [key.index(i + 1) for i in range(len(key))]
+    ciphering_key = [key.index(i + 1) + 1 for i in range(len(key))]
     deciphered_text = text
     ciphered_text = ''
 
